@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Battery Monitor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Smart Battery Monitor</h1>
+            <p>Battery Health & Usage Monitoring System</p>
+        </div>
+        <div class="live"><span></span> LIVE MONITORING</div>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h2>Battery Overview</h2>
+            <p>Monitor your laptop battery performance in real time.</p>
+        </section>
+
+        <section class="cards">
+            <div class="card">
+                <p>Battery Level</p>
+                <h2 id="percentage">--%</h2>
+                <div class="bar"><div id="batteryBar"></div></div>
+            </div>
+
+            <div class="card">
+                <p>Battery Health Score</p>
+                <h2 id="healthScore">--</h2>
+                <span id="condition">Checking...</span>
+            </div>
+
+            <div class="card">
+                <p>Charging Status</p>
+                <h2 id="charging">--</h2>
+                <span>Power connection</span>
+            </div>
+
+            <div class="card">
+                <p>Battery Condition</p>
+                <h2 id="batteryCondition">--</h2>
+                <span>Health analysis</span>
+            </div>
+        </section>
+
+        <section class="details">
+            <h2>Battery Information</h2>
+            <div class="detail-grid">
+                <p>Design Capacity: <strong id="designCapacity">--</strong></p>
+                <p>Full Charge Capacity: <strong id="fullCapacity">--</strong></p>
+                <p>Last Updated: <strong id="updated">--</strong></p>
+            </div>
+        </section>
+
+        <section class="recommendation">
+            <h2>Warning & Recommendation</h2>
+            <p id="recommendation">Collecting battery information...</p>
+        </section>
+
+        <footer>
+            Smart Battery Health & Usage Monitoring System
+            <br>Developed using Python, Flask, Psutil and Pandas
+        </footer>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

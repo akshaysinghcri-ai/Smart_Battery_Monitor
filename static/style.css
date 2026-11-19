@@ -1,0 +1,161 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background: #f1f5f9;
+    color: #172033;
+}
+
+header {
+    background: linear-gradient(120deg, #101b35, #174c78);
+    color: white;
+    padding: 28px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 7px;
+}
+
+header p {
+    color: #cbdced;
+}
+
+.live {
+    background: #ffffff18;
+    padding: 11px 17px;
+    border-radius: 25px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.live span {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background: #42df8b;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
+main {
+    max-width: 1250px;
+    margin: auto;
+    padding: 35px 25px;
+}
+
+.welcome {
+    margin-bottom: 25px;
+}
+
+.welcome h2 {
+    font-size: 25px;
+    margin-bottom: 7px;
+}
+
+.welcome p, .card p {
+    color: #718096;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card, .details, .recommendation {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 18px #1720330b;
+}
+
+.card h2 {
+    font-size: 30px;
+    margin: 18px 0 10px;
+    color: #174c78;
+}
+
+.card span {
+    color: #718096;
+    font-size: 14px;
+}
+
+.bar {
+    background: #e5eaf0;
+    height: 9px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 17px;
+}
+
+.bar div {
+    height: 100%;
+    width: 0%;
+    background: #16a36a;
+    transition: width 0.4s;
+}
+
+.details, .recommendation {
+    margin-top: 25px;
+}
+
+.details h2, .recommendation h2 {
+    margin-bottom: 22px;
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.detail-grid p {
+    color: #718096;
+    line-height: 1.7;
+}
+
+.detail-grid strong {
+    display: block;
+    color: #172033;
+    margin-top: 5px;
+}
+
+.recommendation {
+    border-left: 5px solid #e6a23c;
+}
+
+.recommendation p {
+    color: #526174;
+    line-height: 1.7;
+}
+
+footer {
+    text-align: center;
+    padding: 35px 10px 10px;
+    color: #8792a3;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+@media (max-width: 850px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .cards, .detail-grid {
+        grid-template-columns: 1fr;
+    }
+}
